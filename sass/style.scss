@@ -27,6 +27,7 @@ body {
     color: #3d3d3d;
     font-size: 16px;
     line-height: 1.7;
+    cursor: default;
 }
 
 .container {
@@ -232,7 +233,7 @@ ul {
 }
 
 .skill-image img:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     filter: brightness(100%);
     cursor: pointer;
 }
@@ -270,11 +271,13 @@ ul {
    object-fit: cover;
    filter: brightness(75%);
    transition: all 0.5s;
+   cursor: pointer;
 }
 
 .image-portfolio img:hover {
     filter: brightness(100%);
 }
+
 
 
 /* CONTACT */
@@ -329,5 +332,15 @@ input:focus, textarea:focus {
     background: $color-main;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+
+
+/* FOOTER */ 
+
+.container.i i {
+    font-size: 80px;
+    margin: 30px 30px;
+    color: #000;
     cursor: pointer;
 }
