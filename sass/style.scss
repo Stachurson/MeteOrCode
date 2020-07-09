@@ -294,11 +294,22 @@ form {
     padding: 55px 0;
 }
 
+input::placeholder, ::placeholder{
+    font-family: $font-main;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid $color-after;
+}
+
 .input {
     padding: 11px;
     margin-top: 13px;
     width: 400px;
     border: none;
+    outline: none;
 }
 
 .area {
@@ -317,10 +328,6 @@ form {
     margin-top: 28px;
     background: $color-main;
     border: none;
+    outline: none;
     cursor: pointer;
-    opacity: 0.8;
-}
-
-.button:hover{
-    opacity: 1;
 }
