@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Montserrat&family=Nanum+Gothic&display=swap");
 /* VARIABLE */
 /* GLOBAL */
@@ -215,5 +216,50 @@ ul {
 .skill-title .skill-line {
   color: #b5bdc5;
   font-weight: normal;
+}
+
+.skill-image img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+  cursor: pointer;
+}
+
+.skill-image img {
+  transition: all 1s;
+  filter: brightness(70%);
+}
+
+/* PORTFOLIO */
+.portfolio li {
+  position: relative;
+  float: left;
+  width: 33.3333%;
+}
+
+.row::before,
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.image-portfolio {
+  /*position: absolute; ---> tutaj właściwość psuła galerię*/
+  height: 280px;
+  overflow: hidden;
+}
+
+.image-portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+  transition: all 0.5s;
+  position: relative;
+  display: block;
+}
+
+.image-portfolio img:hover {
+  filter: brightness(100%);
 }
 /*# sourceMappingURL=style.css.map */

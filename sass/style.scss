@@ -8,6 +8,7 @@ $color-blue: #3c40c6;
 $color-form: #1e272e;
 $color-after:#b5bdc5;
 $color-bg: #ffffff;
+$color-about: #d0d3d6a2;
 
 $font-main: 'Dosis', sans-serif;
 $font-citation: 'Nanum Gothis', sans-serif;
@@ -232,3 +233,50 @@ ul {
     font-weight: normal;
 }
 
+.skill-image img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.skill-image img {
+    transition: all 1s;
+    filter: brightness(70%);
+}
+
+
+
+/* PORTFOLIO */
+
+.portfolio li {
+    position: relative;
+    float: left;
+    width: 33.3333%;
+}
+
+.row::before,
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.image-portfolio {
+    /*position: absolute; ---> tutaj właściwość psuła galerię*/
+    height: 280px;
+    overflow: hidden;
+}
+
+.image-portfolio img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: brightness(75%);
+   transition: all 0.5s;
+   position: relative;
+   display: block;
+}
+
+.image-portfolio img:hover {
+    filter: brightness(100%);
+}
