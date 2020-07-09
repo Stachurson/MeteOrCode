@@ -227,7 +227,6 @@ ul {
 
 /* PORTFOLIO */
 .portfolio li {
-  position: relative;
   float: left;
   width: 33.3333%;
 }
@@ -251,8 +250,6 @@ ul {
   object-fit: cover;
   filter: brightness(75%);
   transition: all 0.5s;
-  position: relative;
-  display: block;
 }
 
 .image-portfolio img:hover {
@@ -260,4 +257,49 @@ ul {
 }
 
 /* CONTACT */
+.contact {
+  background: #171717;
+}
+
+.contact .section-title {
+  padding-top: 70px;
+  margin-bottom: 0;
+  position: relative;
+  color: #fff;
+}
+
+form {
+  padding: 55px 0;
+}
+
+.input {
+  padding: 11px;
+  margin-top: 13px;
+  width: 400px;
+  border: none;
+}
+
+.area {
+  margin-top: 11px;
+  width: 400px;
+  height: 170px;
+  padding: 10px 10px;
+}
+
+.button {
+  width: 130px;
+  height: 45px;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 28px;
+  background: #d2dae2;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button:hover {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
