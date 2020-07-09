@@ -260,10 +260,4 @@ ul {
 }
 
 /* CONTACT */
-.row::before,
-.row::after {
-  clear: both;
-  content: "";
-  display: table;
-}
 /*# sourceMappingURL=style.css.map */
