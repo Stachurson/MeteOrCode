@@ -185,6 +185,7 @@ ul {
     position: relative;
 }
 
+
 .skill-image {
     position: absolute;
     width: 50%;
@@ -260,23 +261,43 @@ ul {
 }
 
 .image-portfolio {
-    /*position: absolute; ---> tutaj właściwość psuła galerię*/
     height: 280px;
     overflow: hidden;
+    position: relative;
+}
+
+.image-portfolio .link {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.650);
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.image-portfolio .link i {
+    font-size: 82px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #fff;
+}
+
+.image-portfolio:hover .link {
+    opacity: 1;
 }
 
 .image-portfolio img {
    width: 100%;
    height: 100%;
    object-fit: cover;
-   filter: brightness(75%);
    transition: all 0.5s;
    cursor: pointer;
 }
 
-.image-portfolio img:hover {
-    filter: brightness(100%);
-}
 
 
 
